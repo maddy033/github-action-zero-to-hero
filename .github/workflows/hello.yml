@@ -23,11 +23,9 @@ jobs:
           run: 
             echo "Mandar"
             echo "Mandar"
-            echo "Mandar"
-            echo "Mandar"
     details:
-      runs-on: 
+      runs-on: ubuntu-latest
       steps:
-        -name: Show what is the version of python , docker  ,etc
-         run: docker --version  && python --version
+        - name: Show what is the version of python , docker  ,etc
+          run: docker --version && python --version
 
