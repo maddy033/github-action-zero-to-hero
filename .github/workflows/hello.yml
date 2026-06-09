@@ -19,10 +19,12 @@ jobs:
         - name: say hello to username
           run: echo "Hello $USER"
         
-        - name:  Print Mandar multiple times
+        - name:  Print Mandar 10 times
           run: 
-            echo "Mandar"
-            echo "Mandar"
+            for i in {1..10}
+            do
+              echo "Mandar"
+            done
     details:
       runs-on: ubuntu-latest
       steps:
