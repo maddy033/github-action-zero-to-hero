@@ -29,5 +29,5 @@ jobs:
       runs-on: 
       steps:
         -name: Show what is the version of python , docker  ,etc
-         run: docker --verion  && python --version
+         run: docker --version  && python --version
 
