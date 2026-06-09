@@ -17,7 +17,7 @@ jobs:
           run: echo "Hello Dosto"
 
         - name: say hello to username
-          run: echo Hello "$USER"
+          run: echo "Hello $USER"
         
         - name:  Print Mandar multiple times
           run: 
@@ -25,5 +25,9 @@ jobs:
             echo "Mandar"
             echo "Mandar"
             echo "Mandar"
-        
+    details:
+      runs-on: 
+      steps:
+        -name: Show what is the version of python , docker  ,etc
+         run: docker --verion  && python --version
 
